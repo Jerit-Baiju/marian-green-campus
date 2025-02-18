@@ -6,80 +6,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marian College - Green Campus Initiative</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-green-500">Marian College</a>
-      <ul class="flex space-x-4">
-        <li><a href="#" class="text-gray-600 hover:text-green-500">Home</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-green-500">About</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-green-500">Initiatives</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-green-500">Contact</a></li>
-      </ul>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="#"
+            class="text-2xl font-bold bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
+            Marian College
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-green-600 transition-colors">Home</a>
+          <a href="#" class="text-gray-700 hover:text-green-600 transition-colors">About</a>
+          <a href="#" class="text-gray-700 hover:text-green-600 transition-colors">Initiatives</a>
+          <a href="#" class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+            Contact Us
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-green-500 text-white text-center py-20">
+  <section class="pt-32 pb-20 px-6">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-bold mb-4">Welcome to Marian College</h1>
-      <p class="text-xl mb-8">Join us in our mission to create a sustainable future.</p>
-      <button class="px-8 py-2 bg-white text-green-500 rounded-full hover:bg-gray-200">Learn More</button>
-    </div>
-  </section>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="text-5xl font-bold leading-tight">
+            Building a
+            <span class="bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
+              Sustainable
+            </span>
+            Future Together
+          </h1>
+          <p class="text-xl text-gray-600">
+            Join Marian College's initiative to create an eco-friendly campus and contribute to a greener tomorrow.
+          </p>
+          <div class="flex space-x-4">
+            <button class="px-8 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+              Get Started
+            </button>
+            <button
+              class="px-8 py-3 border-2 border-green-600 text-green-600 rounded-full hover:bg-green-50 transition-colors">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="relative">
 
-  <!-- About Section -->
-  <section class="container mx-auto px-4 py-20">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">About Our Green Campus Initiative</h2>
-        <p class="text-gray-600 mb-4">Our initiative focuses on reducing our carbon footprint and promoting sustainable
-          practices across the campus.</p>
-        <p class="text-gray-600">We believe in the power of education and community involvement to drive positive change
-          for the environment.</p>
-      </div>
-      <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Marian_College_Kuttikkanam.jpg" alt="Green Campus"
-          class="w-full h-auto rounded-lg shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Marian_College_Kuttikkanam.jpg"
+            alt="Marian College"
+            class="rounded-2xl shadow-2xl w-full">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Initiatives Section -->
-  <section class="bg-gray-200 py-20">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Initiatives</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <img src="static/images/solar.jpg"  class="w-full h-48 object-cover rounded-t-lg">
-          <h3 class="text-xl font-bold mt-4">Solar Panels</h3>
-          <p class="text-gray-600">Harnessing solar energy for a brighter future.</p>
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16">Our Green Initiatives</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="h-64 w-full mb-6">
+            <img src="static/images/solar.jpg" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Solar Energy Implementation</h3>
+          <p class="text-gray-600">Reducing our carbon footprint through renewable energy sources.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <img src="static/images/farming.jpg" alt="Recycling Program" class="w-full h-48 object-cover rounded-t-lg">
-          <h3 class="text-xl font-bold mt-4">Recycling Program</h3>
-          <p class="text-gray-600">Promoting recycling to reduce waste and conserve resources.</p>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="h-64 w-full mb-6">
+            <img src="static/images/farming.jpg" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sustainable Agriculture</h3>
+          <p class="text-gray-600">Promoting organic farming and sustainable agricultural practices.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <img src="static/images/garden.jpg" alt="Community Garden" class="w-full h-48 object-cover rounded-t-lg">
-          <h3 class="text-xl font-bold mt-4">Community Garden</h3>
-          <p class="text-gray-600">Growing organic produce and fostering community engagement.</p>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="h-64 w-full mb-6">
+            <img src="static/images/garden.jpg" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Community Gardens</h3>
+          <p class="text-gray-600">Creating green spaces for learning and community engagement.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="py-20 bg-green-600">
+    <div class="container mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl font-bold mb-8">Join Our Green Movement</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Be part of our mission to create a sustainable future. Get involved in
+        our green campus initiatives today.</p>
+      <button class="px-8 py-3 bg-white text-green-600 rounded-full hover:bg-gray-100 transition-colors">
+        Contact Us
+      </button>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4">
-    <p>&copy; 2024 Marian College | All Rights Reserved</p>
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Marian College</h3>
+          <p class="text-sm">Committed to environmental sustainability and excellence in education.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <div class="space-y-2">
+            <a href="#" class="block text-sm hover:text-green-400">About Us</a>
+            <a href="#" class="block text-sm hover:text-green-400">Initiatives</a>
+            <a href="#" class="block text-sm hover:text-green-400">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+          <p class="text-sm">Email: info@mariancollege.edu</p>
+          <p class="text-sm">Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <p>&copy; 2024 Marian College | All Rights Reserved</p>
+      </div>
+    </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@v1.0.1/script.js"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
 </body>
 
 </html>
